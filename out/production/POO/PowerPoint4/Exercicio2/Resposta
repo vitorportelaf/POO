@@ -1,0 +1,4 @@
+e1.x = e1.z + e2.x + e2.y;
+e2.y = 2*e1.x + e2.z;
+e1.z = e2.z + e1.y;
+e2.z = e2.z + 2; - Unico que realmente da um valor que nao seja 0
