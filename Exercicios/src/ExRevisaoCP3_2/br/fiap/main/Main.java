@@ -1,0 +1,10 @@
+package ExRevisaoCP3_2.br.fiap.main;
+
+import ExRevisaoCP3_2.br.fiap.controle.Controle;
+
+public class Main {
+    public static void main(String[] args) {
+        Controle controle = new Controle();
+        controle.menu();
+    }
+}
