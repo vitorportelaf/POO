@@ -21,9 +21,7 @@ public abstract class Cliente extends Object{
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "nome='" + nome + '\'' +
-                ", contato='" + contato + '\'' +
-                '}';
+        String aux = "Nome: "+nome+"\nContato: "+contato;
+        return aux;
     }
 }

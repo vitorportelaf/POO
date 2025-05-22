@@ -1,6 +1,10 @@
 package ExRevisaoCP3.br.fiap.cliente;
 
-public class PessoaFisica extends Cliente{
+import ExRevisaoCP3.br.fiap.desconto.Desconto;
+
+import java.util.Random;
+
+public class PessoaFisica extends Cliente {
     private String cpf;
 
     public PessoaFisica(String nome, String contato, String cpf) {
@@ -19,8 +23,7 @@ public class PessoaFisica extends Cliente{
 
     @Override
     public String toString() {
-        return "PessoaFisica{" +
-                "cpf='" + cpf + '\'' +
-                '}';
+        String aux = "\nCPF: "+cpf;
+        return super.toString()+aux;
     }
 }

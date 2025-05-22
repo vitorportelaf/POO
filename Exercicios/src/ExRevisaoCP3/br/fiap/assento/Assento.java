@@ -13,6 +13,10 @@ public class Assento {
         return numero;
     }
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
     public boolean isDisponivel() {
         return disponivel;
     }
@@ -23,9 +27,7 @@ public class Assento {
 
     @Override
     public String toString() {
-        return "Assento{" +
-                "numero=" + numero +
-                ", disponivel=" + disponivel +
-                '}';
+        String aux = "\nAssento: "+getNumero();
+        return aux;
     }
 }

@@ -16,21 +16,20 @@ public class PessoaJuridica extends Cliente implements Desconto {
         return cnpj;
     }
 
-    public double aplicarDesconto(double valorOriginal){
-        Random rd = new Random();
-        int percentual = 1 + rd.nextInt(10);
-        return valorOriginal + (valorOriginal * percentual/100);
-    }
-
     @Override
     public String getIdentificador() {
         return cnpj;
     }
 
+    public double aplicarDesconto(double valorOriginal){
+        Random rd = new Random();
+        double porcentagem = 1 + rd.nextInt(10);
+        return valorOriginal +(valorOriginal*porcentagem)/100;
+    }
+
     @Override
     public String toString() {
-        return "PessoaJuridica{" +
-                "cnpj='" + cnpj + '\'' +
-                '}';
+        String aux = "\nCNPJ: "+cnpj;
+        return super.toString()+aux;
     }
 }
